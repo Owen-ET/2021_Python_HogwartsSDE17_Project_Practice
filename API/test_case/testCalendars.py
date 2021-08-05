@@ -43,7 +43,7 @@ class TestCalendars:
 
 
     def test_get_calendars(self):
-        res_get = self.calendars.get_calendarsList_info(self.calendar_id)
+        res_get = self.calendars.get_calendarsList_info(self.calendar_id_null)
         print(res_get)
         assert res_get['code'] == 0
 
