@@ -17,11 +17,10 @@ class TestCalendars:
         self.permissions = 'public'
         self.color = -1
         self.summary_alias = '测试日历备注名5'
-        self.calendar_id = 'feishu.cn_V03mp6MHH4VBQNjuZdfYEc@group.calendar.feishu.cn'
+        self.calendar_id = 'feishu.cn_3Ieq5fL7yucZUJ4CqKeIOg@group.calendar.feishu.cn'
         self.calendar_err = 'feishu.cn_CLVH6pnyg9wzyMBKeaC9Ed@group.calendar.feishu.cn'
         self.calendar_id_null = ''
         self.calendars = FeishuWorkCalendars()
-
 
 
     def test_create_calendars(self):
@@ -56,6 +55,10 @@ class TestCalendars:
                                                      self.color,
                                                      self.summary_alias)
         assert res_update['code'] == 0
+
+        res_get = self.calendars.get_calendarsList_info(self.calendar_id_null)
+        print(res_get)
+        assert res_get['code'] == 0
 
 
     def test_delete_calendars(self):
