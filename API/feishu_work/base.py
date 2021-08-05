@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2021/08/05 09:11
 # @Author  : zc
-# @File    : bash.py
+# @File    : base.py
 import requests
 
 
@@ -17,6 +17,9 @@ class Base:
             'Authorization': f"Bearer {self.token}",
             'Content-Type': "application/json; charset=utf-8"
         }
+
+        self.baseUrl = "https://open.feishu.cn/open-apis/calendar/v4/calendars/"
+        self.list = []
 
 
     def get_token(self):
