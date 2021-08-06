@@ -1,0 +1,7 @@
+base:
+  calendarsUrl: "https://open.feishu.cn/open-apis/calendar/v4/calendars/"
+  token:
+    url: 'https://open.feishu.cn/open-apis/auth/v3/tenant_access_token/internal/'
+    params:
+      app_id: 'cli_a18de0f937f9500d'
+      app_secret: 'nUzgBNrv1sX20ARjI4dXUbVMYsDkUyPp'

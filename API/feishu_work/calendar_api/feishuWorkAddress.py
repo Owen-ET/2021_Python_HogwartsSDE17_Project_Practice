@@ -3,15 +3,10 @@
 # @Time    : 2021/08/04 11:28
 # @Author  : zc
 # @File    : feishuWorkAddress.py
-import requests
 
-from API.feishu_work.base import Base
-
+from API.feishu_work.calendar_api.base import Base
 
 class FeishuWorkCalendars(Base):
-
-
-
 
 
     def get_calendarsList_info(self,calendar_id):

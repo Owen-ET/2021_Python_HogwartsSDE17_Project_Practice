@@ -1,0 +1,9 @@
+calendars:
+    summary: '测试日历5'
+    newSummary: '更改测试日历5'
+    description: '测试日历描述5'
+    permissions: 'public'
+    color: -1
+    summary_alias: '测试日历备注名5'
+    calendar_err: 'feishu.cn_CLVH6pnyg9wzyMBKeaC9Ed@group.calendar.feishu.cn'
+    calendar_id_null: ''
