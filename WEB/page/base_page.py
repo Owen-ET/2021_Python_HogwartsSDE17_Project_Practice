@@ -53,3 +53,8 @@ class Base:
         """进入页面"""
         handles = self.handles()
         self.driver.switch_to.window(handles[index-1])
+
+
+    def get_text(self,loc):
+        """获取文字内容"""
+        return self.find_element(loc).text

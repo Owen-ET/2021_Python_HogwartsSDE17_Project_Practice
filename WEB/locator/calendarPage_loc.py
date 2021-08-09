@@ -19,3 +19,9 @@ class CalendarPageLoc:
     description_loc = (By.CSS_SELECTOR,"._textarea-adaptive>textarea")
     # 创建日历按钮
     createCalendarButton_loc = (By.CSS_SELECTOR,".larkc-btn")
+    # 新日历的名称
+    newCalendarName_loc = (By.CSS_SELECTOR,".choose-calendar>div>.calendars>div:nth-child(3)>.calendar-summary-with-icon>div")
+    # 删除日历按钮
+    deleteCalendarButton_loc = (By.CSS_SELECTOR,".choose-calendar>div>.calendars>div:nth-child(3)>.unfollow")
+    # 删除日历确定按钮
+    delCalOKButton_loc = (By.CSS_SELECTOR,".uni-btn-theme-primary")
