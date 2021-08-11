@@ -9,6 +9,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.action_chains import ActionChains as AC
 
 
 class Base:
@@ -58,3 +59,19 @@ class Base:
     def get_text(self,loc):
         """获取文字内容"""
         return self.find_element(loc).text
+    
+    
+    def move_to_element(self,loc):
+        """移动鼠标到元素上"""
+        AC(self.driver).move_to_element(self.find_element(loc)).perform()
+
+
+    def el_clear(self,loc):
+        """清空数据"""
+        self.find_element(loc).clear()
+
+
+    def el_clear_sendKeys(self,loc,text):
+        """清空数据并输入数据"""
+        self.find_element(loc).clear()
+        self.el_sendKeys(loc,text)
