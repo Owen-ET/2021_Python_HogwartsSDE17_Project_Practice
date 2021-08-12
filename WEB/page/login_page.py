@@ -20,7 +20,7 @@ class LoginPage(Base):
         self.el_click(loc.nextButton_loc)
         # 停顿20秒手动输入短信验证码
         sleep(20)
-        # self.el_click(loc.enterButton_loc)
+        self.el_click(loc.enterButton_loc)
 
     def goto_mainPage(self,mobile):
         """跳转到主页"""
