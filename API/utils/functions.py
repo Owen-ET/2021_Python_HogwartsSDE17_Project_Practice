@@ -16,7 +16,7 @@ class Functions:
         return basePath
 
 
-    def getYamlData(self,yamlName='base'):
+    def getYamlData(self,yamlName):
         '''获取yaml数据'''
         yamlPath = self.upPath() + f'/data/{yamlName}Data.yaml'
         with open(yamlPath,encoding='utf-8') as file:
