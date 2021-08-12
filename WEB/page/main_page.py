@@ -3,8 +3,8 @@
 # @Time    : 2021/08/06 16:26
 # @Author  : zc
 # @File    : main_page.py
-from time import sleep
 
+from time import sleep
 from WEB.page.base_page import Base
 from WEB.locator.mainPage_loc import MainPageloc as loc
 from WEB.page.calendar_page import CalendarPage
@@ -18,8 +18,6 @@ class MainPage(Base):
         self.el_click(loc.left_calendar_loc)
         sleep(0.5)
         self.enter_window(2)
-
-
 
     def goto_calendarPage(self):
         """跳转到日历页面"""
